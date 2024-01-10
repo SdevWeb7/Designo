@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function HomePart2 () {
 
    return (
@@ -5,21 +7,21 @@ export function HomePart2 () {
    <div className="bg-pattern1"></div>
    <div className="home2">
 
-      <a href={'/web-designs'} className={'webdesign'}>
+      <Link to={'/web-designs'} className={'webdesign'}>
             <h1>WEB DESIGN</h1>
             <p>VIEW PROJECTS <img src="/public/images/shared/desktop/icon-right-arrow.svg" alt="a" className={'inline'} /></p>
-      </a>
+      </Link>
 
-      <a href={'/app-designs'} className="appdesign">
+      <Link to={'/app-designs'} className="appdesign">
          <h1>APP DESIGN</h1>
          <p>VIEW PROJECTS <img src="/public/images/shared/desktop/icon-right-arrow.svg" alt="a" className={'inline'} /></p>
 
-      </a>
+      </Link>
 
-      <a href={'/graphic-designs'} className="graphicdesign">
+      <Link to={'/graphic-designs'} className="graphicdesign">
          <h1>GRAPHIC DESIGN</h1>
          <p>VIEW PROJECTS <img src="/public/images/shared/desktop/icon-right-arrow.svg" alt="a" className={'inline'} /></p>
-      </a>
+      </Link>
 
    </div>
       </>

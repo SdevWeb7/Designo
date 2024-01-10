@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function HomePart1 () {
 
    return (
@@ -11,7 +13,7 @@ export function HomePart1 () {
 
             <p className={'paragraphe1'}>With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services.</p>
 
-            <a href="/company"><button className={'button'}>LEARN MORE</button></a>
+            <Link to="/company"><button className={'button'}>LEARN MORE</button></Link>
          </div>
 
          <div className={'phone-img'}></div>
