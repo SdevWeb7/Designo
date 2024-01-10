@@ -1,0 +1,78 @@
+.home1 {
+  margin: 0 10.31rem;
+  padding: 9.06rem 0 0 5.94rem;
+  position: relative;
+
+  .title1 {
+    max-width: 33.75rem;
+    color: #FFF;
+    font-family: Jost;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3rem;
+    margin-bottom: 1.71rem;
+  }
+  .paragraphe1 {
+    max-width: 27.8125rem;
+    color: #FFF;
+    font-family: Jost;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.625rem; /* 162.5% */
+    margin-top: 0.69rem;
+  }
+  button {
+    margin-top: 2.5rem;
+  }
+  .phone-img {
+    width: 430px;
+    height: 780px;
+    background-image: url("/public/images/home/desktop/image-hero-phone.png");
+    background-size: 150%;
+    background-position: 60%;
+    margin-top: -6rem;
+    z-index: -1;
+  }
+  .circle1 {
+    position: absolute;
+    width: 40rem;
+    height: 40rem;
+    top: 0;
+    right: 0;
+    border-radius: 40rem;
+    opacity: 0.3089;
+    background: linear-gradient(0deg, rgba(93, 2, 2, 0.00) 0%, rgba(93, 2, 2, 0.50) 100%);
+    z-index: -1;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .home1 {
+    margin: 0 4rem;
+    padding: 4rem 0 4rem 4rem;
+  }
+}
+@media only screen and (max-width: 1066px) {
+  .home1 {
+    text-align: center;
+    padding: 3rem 3rem 0 3rem;
+    flex-direction: column;
+    align-items: center;
+
+    .paragraphe1, .title1 {
+      max-width: 100%;
+    }
+    .phone-img {
+      margin-top: -3rem;
+      transform: translateX(5%);
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .home1 {
+    margin: 0;
+  }
+}

@@ -1,0 +1,47 @@
+.button {
+  width: 9.5rem;
+  height: 3.5rem;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  background: #FFF;
+  color: #333136;
+  font-family: Jost;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 3;
+
+  &:hover {
+    color: rgba(255, 255, 255);
+    background-color: #FFAD9B;
+  }
+  &-dark {
+    width: 9.5rem;
+    height: 3.5rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    color: #FFF;
+    text-align: center;
+    font-family: Jost;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.0625rem;
+    text-transform: uppercase;
+    background: #E7816B;
+    color: rgba(255, 255, 255);
+    &:hover {
+      color: rgba(255, 255, 255);
+      background-color: #FFAD9B;
+    }
+  }
+}
+
+.active {
+  border-bottom: 1px solid black;
+}

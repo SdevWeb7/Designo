@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "scrollbar";
+@import "header";
+@import "home/home";
+@import "home/home2";
+@import "home/home3";
+@import "home/home4";
+@import "company/company";
+@import "company/company2";
+@import "company/company3";
+@import "company/company4";
+@import "locations/locations";
+@import "components/button";
+@import "components/bg-orange";
+@import "designs/header-designs";
+@import "designs/designs-nav";
+@import "designs/designs-card";
+@import "contact-form";
+@import "footer";
+@import "footer-contact";
+
+@font-face {
+  font-family: Jost;
+  src: url("/public/Jost-VariableFont_wght.ttf")format('truetype');
+}
+@font-face {
+  font-family: JostItalic;
+  src: url("/public/Jost-Italic-VariableFont_wght.ttf")format('truetype');
+}

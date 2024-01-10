@@ -1,0 +1,103 @@
+.container-cards {
+  margin: 8rem 10.31rem;
+  display: grid;
+  grid-template-areas:
+          "card1 card2 card3"
+          "card4 card5 card6";
+  gap: 1.88rem;
+}
+.card1 {
+  grid-area: card1;
+}
+.card2 {
+  grid-area: card2;
+}
+.card3 {
+  grid-area: card3;
+}
+.card4 {
+  grid-area: card4;
+}
+.card5 {
+  grid-area: card5;
+}
+.card6 {
+  grid-area: card6;
+}
+.designs-card {
+  background: #FDF3F0;
+  border-radius: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    border-radius: 0.9375rem;
+    max-height: 275px;
+  }
+  h1 {
+    color: #E7816B;
+    text-align: center;
+    font-family: Jost;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.625rem; /* 130% */
+    letter-spacing: 0.3125rem;
+    margin: 3rem 0 2rem 0;
+  }
+  p {
+    color: #333136;
+    text-align: center;
+    font-family: Jost;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.625rem; /* 162.5% */
+    padding: 0 2rem 3rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container-cards {
+    margin: 4rem;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .container-cards {
+    margin: 4rem 2rem;
+    grid-template-areas:
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+            "card5"
+            "card6";
+
+    img {
+      max-width: 21.18rem;
+      max-height: unset;
+    }
+    .designs-card {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 1rem;
+    }
+  }
+}
+@media only screen and (max-width: 650px) {
+  .container-cards {
+    .designs-card {
+      flex-direction: column;
+      padding-right: 0;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container-cards {
+    margin: 3rem 1rem 2rem 1rem;
+  }
+}

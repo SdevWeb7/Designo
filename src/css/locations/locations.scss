@@ -1,0 +1,143 @@
+.locations {
+  margin: 0 10.31rem;
+  display: grid;
+  grid-template-areas:
+          "canada canada canada-map"
+          "australia-map australia australia"
+          "united-kingdom united-kingdom united-kingdom-map";
+  gap: 2rem;
+
+  h1 {
+    color: #E7816B;
+    font-family: Jost;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3rem; /* 120% */
+    margin-bottom: 1.5rem;
+  }
+  h2 {
+    color: #333136;
+    font-family: Jost;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.625rem; /* 162.5% */
+  }
+  p {
+    color: #333136;
+    font-family: Jost;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.625rem;
+  }
+  .canada {
+    grid-area: canada;
+  }
+  .canada-map {
+    grid-area: canada-map;
+  }
+  .australia {
+    grid-area: australia;
+  }
+  .australia-map {
+    grid-area: australia-map;
+  }
+  .united-kingdom {
+    grid-area: united-kingdom;
+  }
+  .united-kingdom-map {
+    grid-area: united-kingdom-map;
+  }
+
+  .canada, .australia, .united-kingdom {
+    position: relative;
+    border-radius: 0.9375rem;
+    background: #FDF3F0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 2rem 2rem 5.94rem;
+    overflow: hidden;
+
+    :nth-child(4) {
+      display: flex;
+    }
+
+    .circle1, .circle2 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 18.25rem;
+      height: 18.25rem;
+      flex-shrink: 0;
+      border-radius: 18.25rem;
+      opacity: 0.06;
+      background: linear-gradient(45deg, rgba(93, 2, 2, 0.00) 0%, rgba(93, 2, 2, 0.50) 100%);
+    }
+    .circle2 {
+      transform: rotate(60deg);
+      left: 18.25rem;
+    }
+  }
+  .canada-map, .australia-map, .united-kingdom-map {
+    border-radius: 0.9375rem;
+    img {
+      border-radius: 0.9375rem;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .locations {
+    margin: 0 4rem;
+  }
+}
+@media only screen and (max-width: 1070px) {
+  .locations {
+    grid-template-areas:
+            "canada-map"
+            "canada"
+            "australia-map"
+            "australia"
+            "united-kingdom-map"
+            "united-kingdom";
+
+    img {
+      max-height: 20.375rem;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .locations {
+    margin: 0 2rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .locations {
+    margin: 0;
+
+    .canada, .australia, .united-kingdom {
+      padding: 2rem;
+
+      align-items:center;
+
+      :nth-child(4) {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 370px) {
+    .canada, .australia, .united-kingdom {
+      text-align: center;
+    }
+  }
+

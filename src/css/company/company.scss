@@ -1,0 +1,89 @@
+.company {
+  position: relative;
+  margin: 0 10.31rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 0.9375rem;
+
+  h1 {
+    color: #FFF;
+    font-family: Jost;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3rem; /* 100% */
+    margin: 0 5.94rem 2rem 5.44rem;
+  }
+  p {
+    color: #FFF;
+    font-family: Jost;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.625rem; /* 162.5% */
+    margin: 0 5.94rem 0 5.44rem;
+  }
+  .circle1 {
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    bottom: 0;
+    left: -1rem;
+    border-radius: 40rem;
+    opacity: 0.3089;
+    background: linear-gradient(90deg, rgba(93, 2, 2, 0.00) 0%, rgba(93, 2, 2, 0.50) 100%);
+    z-index: -1;
+  }
+  img {
+    max-width: 27rem;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .company {
+    margin: 0 4rem;
+
+  }
+}
+@media only screen and (max-width: 965px) {
+  .company {
+    flex-direction: column-reverse;
+    text-align: center;
+
+    h1 {
+      margin-top: 4rem;
+    }
+    img {
+      max-width: 100%;
+      min-width: 100%;
+      margin-bottom: 1rem;
+    }
+    p {
+      margin-bottom: 4rem;
+    }
+    h1, p {
+      margin: 2rem 2rem;
+    }
+
+  }
+}
+@media only screen and (max-width: 800px) {
+  .company {
+    margin: 0 2rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .company {
+    margin: 0;
+
+    h1, p {
+      margin: 1rem 0 2rem 0;
+      padding: 0 2rem;
+    }
+    img {
+      margin: 0 0 2rem 0;
+    }
+  }
+}

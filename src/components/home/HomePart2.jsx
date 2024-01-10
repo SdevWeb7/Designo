@@ -1,0 +1,27 @@
+export function HomePart2 () {
+
+   return (
+      <>
+   <div className="bg-pattern1"></div>
+   <div className="home2">
+
+      <a href={'/web-designs'} className={'webdesign'}>
+            <h1>WEB DESIGN</h1>
+            <p>VIEW PROJECTS <img src="/public/images/shared/desktop/icon-right-arrow.svg" alt="a" className={'inline'} /></p>
+      </a>
+
+      <a href={'/app-designs'} className="appdesign">
+         <h1>APP DESIGN</h1>
+         <p>VIEW PROJECTS <img src="/public/images/shared/desktop/icon-right-arrow.svg" alt="a" className={'inline'} /></p>
+
+      </a>
+
+      <a href={'/graphic-designs'} className="graphicdesign">
+         <h1>GRAPHIC DESIGN</h1>
+         <p>VIEW PROJECTS <img src="/public/images/shared/desktop/icon-right-arrow.svg" alt="a" className={'inline'} /></p>
+      </a>
+
+   </div>
+      </>
+   )
+}

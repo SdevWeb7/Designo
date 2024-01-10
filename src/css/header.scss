@@ -1,0 +1,65 @@
+.header {
+  background-color: white;
+  padding: 4.19rem 10.31rem 4.19rem 10.31rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all .7s ease-in-out;
+}
+.navbar {
+  color: #333136;
+  font-family: Jost;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.875rem; /* 100% */
+  letter-spacing: 0.125rem;
+
+  a {
+    padding-bottom: 5px;
+  }
+}
+.logo img {
+  width: 12.25rem;
+  height: 1.5rem;
+}
+.menu {
+  position: fixed;
+  top: 155px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 70%);
+  backdrop-filter: blur(2px);
+  z-index: 1001;
+  transition: all .7s ease-in-out;
+
+  .menu-nav {
+    background: #1D1C1E;
+    color: #FFF;
+    font-family: Jost;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5625rem; /* 104.167% */
+    letter-spacing: 0.125rem;
+    padding: 30px 0 0 0;
+
+    a {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+
+/******* MEDIAS *******/
+@media only screen and (max-width: 1200px){
+  .header {
+    padding: 4rem;
+  }
+}
+@media only screen and (max-width: 800px){
+  .header {
+    padding: 4rem 1rem 4rem 1rem;
+  }
+}

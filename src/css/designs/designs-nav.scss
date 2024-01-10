@@ -1,0 +1,98 @@
+.designs-nav {
+  margin: 6rem 10.31rem;
+  display: flex;
+  justify-content: space-between;
+
+  .web-designs {
+    background-image: url("/public/images/home/desktop/image-web-design-small.jpg");
+  }
+  .app-designs {
+    background-image: url("/public/images/home/desktop/image-app-design.jpg");
+  }
+  .graphic-designs {
+    background-image: url("/public/images/home/desktop/image-graphic-design.jpg");
+  }
+
+  .web-designs, .app-designs, .graphic-designs {
+    width: 49%;
+    padding: 6.69rem 2rem;
+    border-radius: 0.9375rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+
+    &:hover:before {
+      background: #E7816B;
+      opacity: .6;
+    }
+
+    h1 {
+      color: #FFF;
+      font-family: Jost;
+      font-size: 2.5rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 3rem; /* 120% */
+      letter-spacing: 0.125rem;
+    }
+    p {
+      color: #FFF;
+      font-family: Jost;
+      font-size: 0.9375rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.3125rem;
+      text-transform: uppercase;
+    }
+  }
+  .web-designs:before, .app-designs:before, .graphic-designs:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 65%);
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .designs-nav {
+    margin: 4rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .designs-nav {
+    margin: 2rem;
+
+    .web-designs {
+      background-image: url("/public/images/home/mobile/image-web-design.jpg");
+    }
+    .app-designs {
+      background-image: url("/public/images/home/mobile/image-app-design.jpg");
+    }
+    .graphic-designs {
+      background-image: url("/public/images/home/mobile/image-graphic-design.jpg");
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .designs-nav {
+    margin: 0;
+    flex-direction: column;
+    .graphic-designs, .app-designs, .web-designs {
+      width: unset;
+      margin: 1rem;
+      padding: 2rem;
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.home4 {
+  margin: 10rem 10.31rem 0 10.31rem;
+  display: flex;
+  padding: 4.5rem 6rem;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+
+  h1 {
+    color: #FFF;
+    font-family: Jost;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.5rem; /* 100% */
+    margin-bottom: 1rem;
+    max-width: 16.75rem;
+  }
+  p {
+    color: #FFF;
+    font-family: Jost;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.625rem; /* 162.5% */
+  }
+  .container-home4 {
+    max-width: 28.0875rem;
+    margin-right: auto;
+  }
+  .circle1, .circle2, .circle3, .circle4, .circle5 {
+    width: 18.25rem;
+    height: 18.25rem;
+    position: absolute;
+    top: -50%;
+    right: 0;
+    border-radius: 18.25rem;
+    opacity: 0.3089;
+    background: linear-gradient(0deg, rgba(93, 2, 2, 0.00) 0%, rgba(93, 2, 2, 0.50) 100%);
+    z-index: -2;
+  }
+  .circle2 {
+    top: -50%;
+    right: 18.25rem;
+    background: linear-gradient(90deg, rgba(93, 2, 2, 0.00) 0%, rgba(93, 2, 2, 0.50) 100%);
+  }
+  .circle3 {
+    top: 50%;
+    right: 0;
+    background: linear-gradient(0deg, rgba(93, 2, 2, 0.00) 0%, rgba(93, 2, 2, 0.50) 100%);
+  }
+  .circle4 {
+    top: 50%;
+    right: 18.25rem;
+    background: linear-gradient(90deg, rgba(93, 2, 2, 0.00) 0%, rgba(93, 2, 2, 0.50) 100%);
+  }
+  .circle5 {
+    top: 50%;
+    right: 36.5rem;
+    background: linear-gradient(180deg, rgba(93, 2, 2, 0.00) 0%, rgba(93, 2, 2, 0.50) 100%);
+  }
+
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  .home4 {
+    margin: 4rem 4rem 0 4rem;
+  }
+}
+@media screen and (max-width: 950px) {
+  .home4 {
+    flex-direction: column;
+    .container-home4 {
+      max-width: unset;
+      text-align: center;
+      margin-right: 0;
+
+      h1 {
+        max-width: unset;
+      }
+    }
+    .button {
+      margin-top: 2rem;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .home4 {
+    margin: 2rem 2rem 0 2rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .home4 {
+    padding: 3rem 2rem;
+  }
+}
